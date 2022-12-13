@@ -1,10 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Hr, Section, Icon, Button, Input, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Text, Hr, Section, Icon, Button, Input, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, Formspree, Menu } from "@quarkly/components";
-import * as Components from "components";
+import { RawHtml, Override, Menu, Formspree } from "@quarkly/components";
 import { FaReact, FaGalacticRepublic } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
@@ -17,22 +16,52 @@ export default (() => {
 			<meta property={"og:image"} content={"https://uploads.quarkly.io/6398ccc3f63de40026721907/images/00133a19556f4154b5b16b5612084c2e.png?v=2022-12-13T20:16:25.447Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section>
+		<Section background="#1261ff">
 			<Box min-width="100px" min-height="100px" order="-1" display="flex">
-				<Image src="https://uploads.quarkly.io/6398ccc3f63de40026721907/images/00133a19556f4154b5b16b5612084c2e.png?v=2022-12-13T20:16:25.447Z" display="block" width="100px" height="100px" />
-				<Text
-					margin="0px 0 24px 0"
-					text-align="center"
-					font="--headline1"
-					md-font="--headline3"
-					color="rgba(0, 0, 0, 0.9)"
+				<Box min-width="100px" min-height="100px">
+					<Image src="https://uploads.quarkly.io/6398ccc3f63de40026721907/images/00133a19556f4154b5b16b5612084c2e.png?v=2022-12-13T20:16:25.447Z" display="block" width="100px" height="100px" />
+				</Box>
+				<Box
+					min-width="100px"
+					min-height="100px"
+					align-self="flex-start"
 					display="block"
-					overflow-x="visible"
+					flex="1 1 0%"
 				>
-					{"          "}Estudoteca{"        "}
-				</Text>
+					<Text
+						margin="0px 0 24px 0"
+						text-align="center"
+						font="--headline1"
+						md-font="--headline3"
+						color="rgba(0, 0, 0, 0.9)"
+						display="block"
+						overflow-x="visible"
+					>
+						Estudoteca{" "}
+					</Text>
+				</Box>
 			</Box>
-			<Hr min-height="10px" min-width="100%" margin="0px 0px 0px 0px" />
+			<Section>
+				<Hr min-height="10px" min-width="100%" margin="0px 0px 0px 0px" />
+			</Section>
+			<Menu
+				display="flex"
+				justify-content="center"
+				font="--base"
+				font-weight="700"
+				md-flex-direction="column"
+				md-align-items="center"
+			>
+				<Override
+					slot="link"
+					text-decoration="none"
+					color="--dark"
+					padding="6px 12px"
+					border-color="#ffffff"
+				/>
+				<Override slot="link-active" color="--primary" />
+				<Override slot="item" padding="6px" />
+			</Menu>
 		</Section>
 		<Section padding="80px 0 80px 0" background="#EDF2F6" sm-padding="60px 0 60px 0">
 			<Override
@@ -124,13 +153,19 @@ export default (() => {
 				</Button>
 			</Box>
 		</Section>
-		<Section padding="60px 0" sm-padding="40px 0" color="--dark">
-			<Components.QuarklycommunityKitTable>
-				<Override slot="Text">
-					Cell 0-0
-				</Override>
-			</Components.QuarklycommunityKitTable>
-			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" />
+		<Section
+			text-align="center"
+			background-color="--primary"
+			color="--light"
+			padding="80px 0"
+			sm-padding="40px 0"
+		>
+			<Text margin="0px 0px 24px 0px" as="h1">
+				About Us
+			</Text>
+			<Text margin="0px 0px 0px 0px" as="h2">
+				Esta plataforma foi criada  por estudante com o intuito de servir como um aquivo comunitário grátis e acessivel em que qualquer pessoa pode contribuir e submeter ficheiros/material escolar.
+			</Text>
 		</Section>
 		<Section background="--color-lightD2" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
@@ -351,8 +386,6 @@ export default (() => {
 				hello@company.com
 			</Link>
 		</Section>
-		<Section />
-		<Section />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

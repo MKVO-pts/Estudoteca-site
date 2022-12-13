@@ -14,7 +14,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section>
+		<Section background="#4078fd">
 			<Box min-width="100px" min-height="100px" order="-1" display="flex">
 				<Image src="https://uploads.quarkly.io/6398ccc3f63de40026721907/images/00133a19556f4154b5b16b5612084c2e.png?v=2022-12-13T20:16:25.447Z" display="block" width="100px" height="100px" />
 				<Text
@@ -49,33 +49,53 @@ export default (() => {
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
 						<Text margin="0px 0px 0px 0px">
 							Portugues
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Inglês
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
-							Física ou Química
+							Física ou Química{" "}
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Matemática A
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Economia A
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Desenho A
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Matemática B
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Geografia A
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Filosofia
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Biologia e Geologia
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Geometria Descritiva A
@@ -96,62 +116,81 @@ export default (() => {
 						Disciplinas Especificas:
 					</Text>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
-						<Text margin="0px 0px 0px 0px">
-							Ciências e Tecnologia
-						</Text>
-						<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
+						<Box min-width="100px" min-height="100px">
 							<Text margin="0px 0px 0px 0px">
-								Física-e-Química{" "}
+								Ciências e Tecnologia
 							</Text>
+							<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
+								<Text margin="0px 0px 0px 0px">
+									Física-e-Química{" "}
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Biologia e Geologia
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Geometria descritiva
+									<br />
+									{" "}
+									<br />
+									{" "}
+								</Text>
+							</List>
+						</Box>
+						<Box min-width="100px" min-height="100px">
 							<Text margin="0px 0px 0px 0px">
-								Biologia e Geologia
+								Ciências Socioeconómicas
 							</Text>
+							<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
+								<Text margin="0px 0px 0px 0px">
+									Economia A
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Geografia
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									NNNNN
+									<br />
+									{"  "}
+									<br />
+									{" "}
+								</Text>
+							</List>
+						</Box>
+						<Box min-width="100px" min-height="100px">
 							<Text margin="0px 0px 0px 0px">
-								Geometria descritiva
+								Línguas e Humanidades
 							</Text>
-						</List>
-						<Text margin="0px 0px 0px 0px">
-							Ciências Socioeconómicas
-						</Text>
-						<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
+							<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
+								<Text margin="0px 0px 0px 0px">
+									História
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Macs/ Mat-B
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Literatura Portuguesa
+									<br />
+									<br />
+									{" "}
+								</Text>
+							</List>
+						</Box>
+						<Box min-width="100px" min-height="100px">
 							<Text margin="0px 0px 0px 0px">
-								Economia A
+								Artes
 							</Text>
-							<Text margin="0px 0px 0px 0px">
-								Geografia
-							</Text>
-							<Text margin="0px 0px 0px 0px">
-								NNNNN
-							</Text>
-						</List>
-						<Text margin="0px 0px 0px 0px">
-							Línguas e Humanidades
-						</Text>
-						<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
-							<Text margin="0px 0px 0px 0px">
-								História
-							</Text>
-							<Text margin="0px 0px 0px 0px">
-								Macs/ Mat-B
-							</Text>
-							<Text margin="0px 0px 0px 0px">
-								Literatura Portuguesa
-							</Text>
-						</List>
-						<Text margin="0px 0px 0px 0px">
-							Artes
-						</Text>
-						<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
-							<Text margin="0px 0px 0px 0px">
-								História cultura da arte
-							</Text>
-							<Text margin="0px 0px 0px 0px">
-								Macs/ Mat-B
-							</Text>
-							<Text margin="0px 0px 0px 0px">
-								Literatura Portuguesa
-							</Text>
-						</List>
+							<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
+								<Text margin="0px 0px 0px 0px">
+									História cultura da arte
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Macs/ Mat-B
+								</Text>
+								<Text margin="0px 0px 0px 0px">
+									Literatura Portuguesa
+								</Text>
+							</List>
+						</Box>
 					</List>
 				</Box>
 				<Box
@@ -170,39 +209,63 @@ export default (() => {
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul">
 						<Text margin="0px 0px 0px 0px">
 							Biologia
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Geologia
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Física{" "}
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Química
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Pscicologia B
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Economia C
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Geografia C
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Filosofia A
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Aplicações Informáticas
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Ciência Política
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Antropologia
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Sociologia
+							<br />
+							{" "}
 						</Text>
 						<Text margin="0px 0px 0px 0px">
 							Direito
@@ -210,6 +273,7 @@ export default (() => {
 					</List>
 				</Box>
 			</Box>
+			<Box min-width="100px" min-height="100px" />
 			<Section background="--color-lightD2" color="--dark" padding="64px 0 64px 0">
 				<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
 					<Box padding="16px 16px 16px 16px" width="35%" lg-width="100%" display="flex">
