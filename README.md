@@ -1,5 +1,6 @@
 <p align="center">
   <img src="http://uploads.quarkly.io/readme/gatsby/readme-quarkly-and-gatsby.png" width="480px" alt="Gatsby project from Quarkly">
+
 </p>
 
 <h1 align="center">Nix</h1>
