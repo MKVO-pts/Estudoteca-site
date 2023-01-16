@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Estudoteca</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Recursos de estudo">
+	<meta name="keywords" content="estudoteca,fichas,exames,resumos,sebentas">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link href="assets/img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/templatemo-softy-pinko.css"/>
+	<link rel="stylesheet" href="css/labs-studio.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/templatemo-softy-pinko.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/flex-slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/jquery-3.63/owl.carousel.css">
+	
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader">
+			<img src="img/logo_completo.png" alt="">
+			<h2>Loading.....</h2>
+		</div>
+	</div>
+    <!-- End Page Preloder -->
+
+
+	<!-- Nav Menu -->
+	<!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Menu Start ***** -->
+						<img src="assets/img/logo_completo.png" width="10%" height="20%">
+                        <ul class="nav">
+                            <li><a href="index.html" class="header-box">Home</a></li>
+							<li><a href="secundario.html" class="header-box">Secundário</a></li>
+                            <li><a href="universidade.html" class="header-box">Universidade</a></li>
+							<li><a href="#about-us" class="header-box">Outros</a></li>
+                            <li><a href="#submeter" class="header-box">Submeter</a></li>
+                            <li><a href="#contact-us" class="header-box">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!-- Nav Menu End -->
+	
+	<!--Day/Night Theme Switch-->
+	<div class="icon-mode">
+		<div class="form-check form-switch" id="modeSwitch">
+			<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+			<label class="form-check-label" for="flexSwitchCheckDefault"><div class="moon"></div></label>
+		</div>
+	</div>
+	<!--Day/Night Theme Switch End-->
+
+
+	<!-- Page header -->
+	<div class="page-top-section">
+		<div class="overlay-secundario">
+		<div class="container text-right">
+			<div class="page-info">
+				<h2>Submeter</h2>
+				<div class="page-links">
+					<a href="index.html">Home</a>
+					<span><strong>Submeter</strong></span>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Page header end-->
+
+
+
+
+	<!-- page section -->
+    <div class="page-section spad">
+		<div class="container">
+            
+
+        </div>
+    </div>
+
+
+	<!--Submeter Form-->
+
+				<form id="form">
+					<ul id="progressbar">
+						<li class="active" id="step1">
+							<strong>Escolher Documentos</strong>
+						</li>
+						<li id="step2"><strong>Detalhes</strong></li>
+						<li id="step3"><strong>Submeter</strong></li>
+						<li id="step4"><strong>Feito</strong></li>
+					</ul>
+					<div class="progress">
+						<div class="progress-bar"></div>
+					</div> <br>
+
+					<div class="submeter-container">
+						<!--Escolher ficheiros-->
+                    	<fieldset id="step_1">
+							<h2>Seleciona os documentos:</h2>
+                    	    <label for="myfile">Select a file:</label>
+                    	    <input 
+                    	        type="file" 
+                    	        id="files_upload" 
+                    	        name="sub_files"
+                    	        accept=".doc,.docx,.xml,.pdf,.img,.png,.txt"
+                    	        multiple/> 
+							<input type="button" value="Proximo" id="next_12"/>
+						</fieldset>
+                    	<!--Detalhes dos ficheiros-->
+						<fieldset id="step_2" style="visibility: hidden;">
+							<h2>Detalhes:</h2>
+                    	    <div class="files-container" id="detalhes">
+                    	        <!--Ficheiro exemplo Geral-->
+                    	        <div class="files-case">
+                    	        <p>Geral</p>
+								</div>
+                    	    </div>
+							<input type="button" id="next_23" value="Proximo" />
+							<input type="button" id="back_21"value="Anterior" />
+						</fieldset>
+						<!--Submit data-->
+						<fieldset id="step_3" style="visibility: hidden;">
+							<h2>Welcome To GFG Step 3</h2>
+							<!--Submit Button-->
+							<input type="submit" value="Upload" name="Uploadfiles" id="Uploadfiles">
+							<input type="button" value="Próximo" id="next_34"/>
+							<input type="button" id="back_32"
+								value="Anterior" />
+						</fieldset>
+
+						<fieldset id="step_4" style="visibility: hidden;">
+							<div class="finish">
+								<h2 class="text text-center">
+									<strong>Submetido</strong>
+								</h2>
+							</div>
+							<a href="index.html"><input type="button" id="back_21" value="Home"/></a>
+						</fieldset>
+					</div>
+				</form>
+	
+	<!--Fim do Submeter Form-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer Ends ***** -->
+
+
+	<!-- jQuery -->
+	<script src="assets/jquery-3.6.3/jquery-3.6.3.js"></script>
+	<script src="assets/jquery-3.6.3/dump.is"></script>
+	<script src="assets/jquery-3.6.3/imgfix.min.js"></script>
+	<script src="assets/jquery-3.6.3/owl.carousel.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/bootstrap-5.3.0-alpha1-dist/js/popper.js"></script>
+	<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+	<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="assets/jquery-3.6.3/scrollreveal.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+
+	<!-- Global Init -->
+	<script src="js/script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Estudoteca</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Recursos de estudo">
+	<meta name="keywords" content="estudoteca,fichas,exames,resumos,sebentas">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="assets/img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700" >
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/templatemo-softy-pinko.css"/>
+	<link rel="stylesheet" href="css/labs-studio.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/templatemo-softy-pinko.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/flex-slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/outros/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/jquery-3.63/owl.carousel.css">
+	
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader">
+			<img src="img/logo_completo.png" alt="">
+			<h2>Loading.....</h2>
+		</div>
+	</div>
+    <!-- End Page Preloder -->
+	
+	<!-- Page header -->
+	<div class="page-top-section">
+		<div class="overlay"></div>
+		<div class="container text-right">
+			<div class="page-info">
+				<h2>Services</h2>
+				<div class="page-links">
+					<a href="#">Home</a>
+					<span>Services</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page header end-->
+
+	<!-- Nav Menu -->
+	<!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Menu Start ***** -->
+						<img src="assets/img/logo_completo.png" width="10%" height="20%">
+                        <ul class="nav">
+                            <li><a href="index.html" class="header-box">Home</a></li>
+							<li><a href="secundario.html" class="header-box">Secundário</a></li>
+                            <li><a href="universidade.html" class="header-box">Universidade</a></li>
+							<li><a href="#about-us" class="header-box">Outros</a></li>
+                            <li><a href="#submeter" class="header-box">Submeter</a></li>
+                            <li><a href="#contact-us" class="header-box">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!-- Nav Menu End -->
+
+	<!--Day/Night Theme Switch-->
+	<div class="icon-mode">
+		<div class="form-check form-switch" id="modeSwitch">
+			<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+			<label class="form-check-label" for="flexSwitchCheckDefault"><div class="moon"></div></label>
+		</div>
+	</div>
+	<!--Day/Night Theme Switch End-->
+
+
+
+
+
+	<!--Main page and content-->
+	<div class="big-container">
+		<div id="page">
+
+			<!--Search/Pesquisa-->
+			<form id="pesquisa" class="uni_form">
+				<label for="Pesquisa" style="width:15%">Pesquisa:</label>
+				<input type="text" name="Pesquisa" value="" placeholder="Nome do documento" style="width:75%">
+				<input type="submit" value="Pesquisar" class="flaticon-026-search" style="background-color: #3c54dd1c;">
+			</form>
+
+			
+			<!--Filter/Details -->
+			<div class="flex-container">
+				<form style="display: flex;" class="uni_form" id="uniforum">
+					<div class="details-container col-md">
+						<label for="faculdade_input">Escola:</label>
+						<select class="form-select" size="1" aria-label="size 3 select example" id="faculdade_input">
+							<option selected>Faculdade</option>
+							<option value="1">Istituto Superior Tecnico</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class="details-container col-md" style="width: 30%;">
+						<div class="row-md">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="apontamentos">
+								<label class="form-check-label" for="apontamentos">Apontamentos</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="Testes">
+								<label class="form-check-label" for="Testes">  Fichas/Testes</label>
+							</div>
+						</div>
+					</div>
+					<div class="details-container col-md" style="width: 30%;">
+						<div class="row-md">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="Slides">
+								<label class="form-check-label" for="Slides">Exames/Provas Modelo</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="Fichas">
+								<label class="form-check-label" for="Fichas">Resumos  </label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="Trabalho" checked>
+								<label class="form-check-label" for="Trabalho"> Trabalho Prático</label>
+							</div>
+						</div>
+					</div>
+
+					<!--Submeter/Aplicar-->
+					<input type="submit" value="Aplicar" style="width:10%;" id="filtros_aplicar">
+				
+				</form>
+			</div>
+			
+			<!--Table of contents-->
+			<br>
+			<div class="table-wrap">
+				<table class="table table-bordered border-primary table-striped">
+					<thead class="thead-primary">	
+						<tr>
+						  <th>#</th>
+						  <th>Nome</th>
+						  <th>Disciplina</th>
+						  <th>Instituição</th>
+						  <th>Tipo</th>
+						  <th>Páginas</th>
+						  <th>Data</th>
+						  <th>Espaço</th>
+						  <th>Download</th>
+						</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row" class="scope" >.com</th>
+						<td>1 Year</td>
+						<td>$70.00</td>
+						<td>$5.00</td>
+						<td>$5.00</td>
+						<td>1 Year</td>
+						<td>$70.00</td>
+						<td>$5.00</td>
+						<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+					  </tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="table-wrap">
+				<br>
+				<table class="table">
+				<thead class="thead-primary">	
+				  <tr>
+					<th>TLD</th>
+					<th>Duration</th>
+					<th>Registration</th>
+					<th>Renewal</th>
+					<th>Transfer</th>
+					<th>Register</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row" class="scope" >.com</th>
+					<td>1 Year</td>
+					<td>$70.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.net</th>
+					<td>1 Year</td>
+					<td>$75.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.org</th>
+					<td>1 Year</td>
+					<td>$65.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.biz</th>
+					<td>1 Year</td>
+					<td>$60.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope" >.info</th>
+					<td>1 Year</td>
+					<td>$50.00</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="scope border-bottom-0">.me</th>
+					<td class="border-bottom-0">1 Year</td>
+					<td class="border-bottom-0">$45.00</td>
+					<td class="border-bottom-0">$5.00</td>
+					<td class="border-bottom-0">$5.00</td>
+					<td class="border-bottom-0"><a href="#" class="btn btn-primary">Sign Up</a></td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+			<!-- Post item -->
+			<!--
+			<div class="post-item">
+				<div class="post-thumbnail">
+					<img src="img/blog/blog-3.jpg" alt="">
+					<div class="post-date">
+						<h2>03</h2>
+						<h3>Nov 2017</h3>
+					</div>
+				</div>
+				<div class="post-content">
+					<h2 class="post-title">Just a simple blog post</h2>
+					<div class="post-meta">
+						<a href="">Loredana Papp</a>
+						<a href="">Design, Inspiration</a>
+						<a href="">2 Comments</a>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Phasellus vestibulum, quam tincidunt venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam. Etiam feugiat augue et varius blandit. Praesent mattis, eros a sodales commodo.</p>
+					<a href="blog-post.html" class="read-more">Read More</a>
+				</div>
+			</div> -->
+				<!-- Pagination -->
+				<div class="page-pagination">
+					<a class="active" href="">01.</a>
+					<a href="">02.</a>
+					<a href="">03.</a>
+					</div>
+				</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer Ends ***** -->	
+
+
+
+	<!-- jQuery -->
+	<script src="assets/jquery-3.6.3/jquery-3.6.3.js"></script>
+	<script src="assets/jquery-3.6.3/dump.js"></script>
+	<script src="assets/jquery-3.6.3/imgfix.min.js"></script>
+	<script src="assets/jquery-3.6.3/owl.carousel.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/bootstrap-5.3.0-alpha1-dist/js/popper.js"></script>
+	<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+	<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="assets/jquery-3.6.3/scrollreveal.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+
+	<!-- Global Init -->
+	<script src="js/script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
