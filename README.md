@@ -1,3 +1,36 @@
+# 
+
+<h1> Estudoteca-Site </h1>
+
+* [General info](#general-info)
+* [Setup](#setup)
+* [Languagues](#languagues)
+
+
+## General Info
+This is the site template of project Estudoteca.
+It used Bootstrap-5.0.3 and Jquery-3.6.3  
+## Setup
+Your Machine
+```
+$ git clone https://github.com/MKVO-pts/Estudoteca-site.git
+$ cd Estudoteca-site
+```
+Using docker
+```
+$ docker pull mkvo/estudoteca:site-source
+$ docker run -d -p 8000 --name estudotecasite mkvo/estudoteca:site-source
+#To Stop
+$ docker stop estudotecasite
+```
+
+
+## Languagues
+This program only uses JavaScript 
+###### Made by MKvO
+
+
+
 <p align="center">
   <img src="http://uploads.quarkly.io/readme/gatsby/readme-quarkly-and-gatsby.png" width="480px" alt="Gatsby project from Quarkly">
 
