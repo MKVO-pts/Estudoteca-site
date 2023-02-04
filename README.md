@@ -9,7 +9,7 @@
 ## General Info
 This is the site template of project [Estudoteca](https://estudoteca.com).
 It used Bootstrap-5.0.3 and Jquery-3.6.3  
-
+See the site <a href="https://mkvo-pts.github.io/Estudoteca-site/"> here </a>
 
 ## Setup
 ### How to run
